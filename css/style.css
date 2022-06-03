@@ -1,0 +1,54 @@
+/*whole file or unique*/
+body{
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    height: fit-content;
+    background:fixed;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(6,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
+
+/* LOGO RELATED*/
+ 
+#id-logo{
+    justify-self: flex-end;
+    width: 100%;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+}
+
+/*NAV BAR RELATED*/
+
+.body__nav{
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    overflow: hidden;
+    align-items: stretch;
+}
+.body__navlist{
+    text-decoration: none;
+    align-items: center;
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    
+}
+.nav__item{
+    list-style-type: none;
+    padding: 10px;   
+    background-color: black;  
+}
+.nav__item a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav__item a:hover{
+    color: green;
+}
