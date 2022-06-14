@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id=id-logo src="../img/logo.svg">
+        <nav class="body__nav">
+            <ul class="body__navlist">
+                <li class="nav__item">
+                    <a href="../index.html">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a href="que-hacer.html">¿Que hacer?</a>
+                </li>
+                <li class="nav__item">
+                    <a href="reservas.html">Reservas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section__contact">
+        <form class="section__form">
+            <h2>Dejanos tus dudas y/o consultas y te contactamos de vuelta</h2>
+            <input type="text" placeholder="Nombre" required><br>               
+            <br>
+            <input type="email" placeholder="Direccion de correo" required><br>
+            <br>
+            <input type="tel" placeholder="Numero de Telefono">
+            <br>
+            <br>
+            <h4>¿Temporada de preferencia?</h4>
+            <label for="from-temporada-select">Verano</label>
+            <input type="radio" name="from-temporada-select" value="verano" required >
+            <label for="from-temporada-select">Invierno</label>
+            <input type="radio" name="from-temporada-select" value="invierno">
+            <br><br>
+            <textarea placeholder="Escribe tu consulta aqui" style="width:400px; height:300px;"></textarea><br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+        </form>    
+        <footer>
+            <ul class="footer__navlist">
+                <li class="nav__item">
+                    <a href="map.html">Mapa</a>
+                </li>
+                <li class="nav__item">
+                    <a href="legales.html">Legales & Inversionistas</a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+</body>
+
+</html>

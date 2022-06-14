@@ -180,25 +180,28 @@ footer {
 .section__text__top-left:hover {
     background-image: linear-gradient(to right, rgb(88, 88, 47), olive ) ;
 }   
-
-.section__text__top-right:hover {
-    background-color: red;
-
-}
-
-.section__text__middle-left:hover {
-    background-color: red;
-
-}
-
 .section__text__middle-right:hover {
     background-color: green;
 }
-
 .section__text__bottom-left:hover {
     background-color: red;
 }
 
-.section__text__bottom-right:hover {
-    background-color: red;
+/*FORM SECTION*/
+
+.section__contact{
+    grid-row: 2 / 3;
+    grid-column: 2 / 5 ;
+}
+
+.section__form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around
+     
 }
