@@ -5,45 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BootSTRAP EDITION</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <img id=id-logo src="../img/logo.svg">
-        <nav class="body__nav">
-            <ul class="body__navlist">
-                <li class="nav__item">
-                    <a href="../index.html">Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="que-hacer.html">¿Que hacer?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="reservas.html">Reservas</a>
-                </li>
-                <li class="nav__item">
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container-sm">
+            <img class="p-3" src="../img/logo.svg">
+        </div>
+        <ul class="nav nav-pills justify-content-center p-3" id="nav_bar">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
     </header>
-    <section class="section__content">
-        <footer>
-            <ul class="footer__navlist">
-                <li class="nav__item">
-                    <a href="map.html">Mapa</a>
-                </li>
-                <li class="nav__item">
-                    <a href="legales.html">Legales & Inversionistas</a>
-                </li>
-            </ul>
-        </footer>
-    </section>
+    <main>
+        <section class="card container" id="servicio">
+            <div class="card-body">
+                <h1> Hoteleria & Cabañas</h1>
+                <p> Nuestras habitaciones y cabañas dejan satisfecho los 5 sentidos, con vistas unicas, naturaleza
+                    autoctona tocando tu puerta.
+                </p>
+                <img class="card-img-top" src="../img/summer.jpg" alt="Verano">
+            </div>
+        </section>
+        <section class="card container" id="servicio">
+            <div class="card-body">
+                <h1> Transporte a centro de SKI</h1>
+                <p> Contamos con transporte reservable y programado para ir al Cnetro de SKI Corralco y otras
+                    actividades, contamos con capacidad para 10 pasajeros.
+                    Okina renounced it all, and rose to a higher plane.
+                </p>
+                <img class="card-img-top" src="../img/summer.jpg" alt="Verano">
+            </div>
+        </section>
+        <section class="card container" id="servicio">
+            <div class="card-body">
+                <h1> Snow Sports Rental</h1>
+                <p> Contamos con nuestro propio servicio de renta de implementos deportivos de Invierno y se le suman
+                    bicicletas, mountainboards y otros divertidos accesorios</p>
+                <img class="card-img-top" src="../img/summer.jpg" alt="Verano">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="nav nav-pills justify-content-center p-3">
+            <li class="nav-item">
+                <a class="nav-link" href="map.html">Mapa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
