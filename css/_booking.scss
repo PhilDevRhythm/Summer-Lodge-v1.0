@@ -1,3 +1,4 @@
+$site_font: CambCambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 div.elem-group {
     margin: 20px 0;
@@ -6,13 +7,11 @@ div.elem-group {
 div.elem-group.inlined {
     width: 49%;
     display: inline-block;
-    float: left;
-    margin-left: 1%;
-}
+    }
 
 label {
     display: block;
-    font-family: "Nanum Gothic";
+    font-family: $site_font;
     padding-bottom: 10px;
     font-size: 1.25em;
 }
@@ -24,7 +23,7 @@ textarea {
     border: 2px solid #777;
     box-sizing: border-box;
     font-size: 1.25em;
-    font-family: "Nanum Gothic";
+    font-family: $site_font;
     width: 100%;
     padding: 10px;
 }
@@ -48,7 +47,7 @@ button {
     border: none;
     color: white;
     font-size: 1.25em;
-    font-family: "Nanum Gothic";
+    font-family: $site_font;
     border-radius: 4px;
     cursor: pointer;
 }

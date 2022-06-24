@@ -1,11 +1,11 @@
 /*WHOLE DOC RELATED */
 body {
   background-color: #85FFBD;
-  background-image: linear-gradient(180deg, #1c440d 0%, #2f2f11 100%); }
-  body div {
+  background-image: url(../img/background.jpg) no-repeat fixed center; }
+  body #root_background {
     background-color: white; }
 
-/*NAVBAR RELATED*/
+/*NAVBAR RELATED INCLUDING FOOTER NAVBAR*/
 #nav_bar {
   --bs-nav-pills-border-radius: 1px;
   --bs-nav-pills-link-active-color: white;
@@ -13,12 +13,13 @@ body {
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: black;
-  --bs-nav-link-hover-bg-color:white;
-  --bs-nav-link-hover-color:black;
+  --bs-nav-link-hover-bg-color: white;
+  --bs-nav-link-hover-color: black;
   text-align: center;
   justify-content: center;
   font-size: larger; }
 
+/*LOGO RELATED*/
 /*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
 #servicio {
   width: 60%;
@@ -41,13 +42,11 @@ div.elem-group {
 
 div.elem-group.inlined {
   width: 49%;
-  display: inline-block;
-  float: left;
-  margin-left: 1%; }
+  display: inline-block; }
 
 label {
   display: block;
-  font-family: "Nanum Gothic";
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-bottom: 10px;
   font-size: 1.25em; }
 
@@ -58,7 +57,7 @@ textarea {
   border: 2px solid #777;
   box-sizing: border-box;
   font-size: 1.25em;
-  font-family: "Nanum Gothic";
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
   width: 100%;
   padding: 10px; }
 
@@ -78,7 +77,7 @@ button {
   border: none;
   color: white;
   font-size: 1.25em;
-  font-family: "Nanum Gothic";
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-radius: 4px;
   cursor: pointer; }
 
