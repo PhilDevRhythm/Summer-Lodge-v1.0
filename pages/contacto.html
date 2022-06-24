@@ -6,68 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BootSTRAP EDITION</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">     
 </head>    
 <body>
-    <header>
-        <div class="container-sm">
-            <img class= "p-3" src="../img/logo.svg">
-        </div>
+    <div class="container-xl">
+        <header>
+            <div class="container-sm">
+                <img class= "p-3" src="../img/logo.svg">
+            </div>
+            <ul class="nav nav-pills justify-content-center p-3" id="nav_bar">
+                <li class="nav-item">
+                    <a class="nav-link"  href="../index.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservas.html">Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </header>
+        <section class="card container" id="servicio">
+            <div class="card-body">
+                <h1> Escribenos o llamanos</h1>
+                <img src="../img/whatsapp_logo_animated.gif">
+                <p class="h1">+ 1 23 4567 8901</p>
+                <br>
+                <form>
+                    <input type="text" placeholder="Nombre*" required><br>               
+                    <br>
+                    <input type="email" placeholder="Direccion de correo*" required><br>
+                    <br>
+                    <input type="tel" placeholder="Numero de Telefono">
+                    <br>
+                    <br>
+                    <h4>¿Temporada de preferencia?</h4>
+                    <label for="from-temporada-select">Verano</label>
+                    <input type="radio" name="from-temporada-select" value="verano" required >
+                    <label for="from-temporada-select">Invierno</label>
+                    <input type="radio" name="from-temporada-select" value="invierno">
+                    <br><br>
+                    <textarea placeholder="Escribe tu consulta aqui" style="width:400px; height:300px;"></textarea><br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar todo">
+                </form>          
+            </div>
+        </section>
+        <footer>
         <ul class="nav nav-pills justify-content-center p-3" id="nav_bar">
-            <li class="nav-item">
-                <a class="nav-link"  href="../index.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reservas.html">Reservas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </header>
-    <section class="card container" id="servicio">
-        <div class="card-body">
-            <h1> Escribenos o llamanos</h1>
-            <img src="../img/whatsapp_logo_animated.gif">
-            <p class="h1">+ 1 23 4567 8901</p>
-            <br>
-            <form>
-                <input type="text" placeholder="Nombre*" required><br>               
-                <br>
-                <input type="email" placeholder="Direccion de correo*" required><br>
-                <br>
-                <input type="tel" placeholder="Numero de Telefono">
-                <br>
-                <br>
-                <h4>¿Temporada de preferencia?</h4>
-                <label for="from-temporada-select">Verano</label>
-                <input type="radio" name="from-temporada-select" value="verano" required >
-                <label for="from-temporada-select">Invierno</label>
-                <input type="radio" name="from-temporada-select" value="invierno">
-                <br><br>
-                <textarea placeholder="Escribe tu consulta aqui" style="width:400px; height:300px;"></textarea><br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar todo">
-            </form>          
-        </div>
-    </section>
-    <footer>
-       <ul class="nav nav-pills justify-content-center p-3" id="nav_bar">
-           <li class="nav-item"> 
-                <a class="nav-link" href="map.html">Mapa</a>        
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
-            </li>
-        </ul>
-    </footer>
+            <li class="nav-item"> 
+                    <a class="nav-link" href="map.html">Mapa</a>        
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
+                </li>
+            </ul>
+        </footer>
+    </div>    
 </body>
 </html>

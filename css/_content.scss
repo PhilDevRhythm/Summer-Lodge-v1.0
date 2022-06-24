@@ -1,0 +1,23 @@
+/*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
+
+#servicio{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .card-body{
+        text-align: center;
+        justify-content: center;
+    
+    }    
+}
+
+
+/*INDEX CONTENT RELATED*/
+
+#nosotros0{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
