@@ -1,20 +1,54 @@
 /*NAVBAR RELATED INCLUDING FOOTER NAVBAR*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-#nav_bar {
-    --bs-nav-pills-border-radius: 1px;
-    --bs-nav-pills-link-active-color: white;
-    --bs-nav-pills-link-active-bg: black;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-font-weight: ;
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-bg-color: white;
-    --bs-nav-link-hover-color: black;
-    text-align: center;
-    justify-content: center;
-    font-size: larger;
+    #nav_bar {
+        --bs-nav-pills-border-radius: 1px;
+        --bs-nav-pills-link-active-color: white;
+        --bs-nav-pills-link-active-bg: black;
+        --bs-nav-link-padding-y: 0.5rem;
+        --bs-nav-link-color: black;
+        --bs-nav-link-hover-bg-color: white;
+        --bs-nav-link-hover-color: black;
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: fit-content;
 
+        .nav_link{
+            a{
+                background-color: chartreuse;
+                &:hover{
+                    background-color: violet;
+
+                }
+            }
+
+        }
+    }
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #nav_bar {
+        --bs-nav-pills-border-radius: 1px;
+        --bs-nav-pills-link-active-color: white;
+        --bs-nav-pills-link-active-bg: black;
+        --bs-nav-link-padding-y: 0.5rem;
+        --bs-nav-link-color: black;
+        --bs-nav-link-hover-bg-color: white;
+        --bs-nav-link-hover-color: black;
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+}
 /*LOGO RELATED*/
-
-

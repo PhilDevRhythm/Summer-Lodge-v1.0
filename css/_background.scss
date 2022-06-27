@@ -1,8 +1,13 @@
 body {
-    /*background-color: #85FFBD;*/
-    background-image: url(../img/background.jpg);
+    background-color: #85FFBD;
+    background:fixed image(url(../img/background.jpg));
 
-    #root_background {
-        background-color: rgb(255, 255, 255);
+    #root_background{
+        background-color: white;
     }
+}
+
+#logo0{
+    background-image: url(../img/logo.svg);
+    display: block;
 }
