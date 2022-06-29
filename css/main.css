@@ -8,9 +8,20 @@
     flex-wrap: nowrap;
     align-self: center; } }
 
-#logo0 {
-  background-image: url(../img/logo.svg);
-  display: block; }
+@media (max-width: 320px) {
+  form {
+    font-size: x-small; } }
+
+#logo_container {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#root_background {
+  background-image: url(../img/background.jpg);
+  display: flex; }
 
 /*HEADER ONLY LOGO*/
 header {
@@ -57,13 +68,15 @@ footer {
 
 /*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
 #servicio {
-  width: 60%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap; }
   #servicio .card-body {
     text-align: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
+    #servicio .card-body .card.p-2 {
+      width: fit-content; }
 
 /*INDEX CONTENT RELATED*/
 #nosotros0 {

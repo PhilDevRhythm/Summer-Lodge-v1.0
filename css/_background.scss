@@ -1,4 +1,12 @@
-#logo0{
-    background-image: url(../img/logo.svg);
-    display: block;
+#logo_container{
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+#root_background{
+    background-image: url(../img/background.jpg);
+    display: flex;
+    
 }
