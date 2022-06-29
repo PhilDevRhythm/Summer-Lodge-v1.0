@@ -1,12 +1,15 @@
 
 @media (max-width: 768px){
     header {
-        flex-direction: column;
-        flex-wrap: wrap;
-        
+        display: inline;
+        //flex-wrap: nowrap;
+        //justify-items: center;//
+        margin-bottom: 1em;
+        //justify-content: center;   //
     }
     #nosotros0{
         flex-direction: column;
         flex-wrap: nowrap;
+        align-self: center;
     }
 }
