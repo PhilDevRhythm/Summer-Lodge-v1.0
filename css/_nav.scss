@@ -20,10 +20,8 @@
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    @extend .nav_container;
+    
     #nav_bar {
         --bs-nav-pills-link-active-color: white;
         --bs-nav-pills-link-active-bg: black;

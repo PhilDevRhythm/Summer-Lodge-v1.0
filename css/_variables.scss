@@ -1,0 +1,11 @@
+$social_media: (
+    send-mail: red,
+    facebook: blue,
+    twitter: lightblue,
+);
+
+@each $social_media, $color in $social_media{
+    .btn--#{$social_media}{
+        background-color: $color;
+}
+}
