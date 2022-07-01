@@ -1,4 +1,13 @@
 /*WHOLE DOC RELATED */
+.btn--send-mail {
+  background-color: red; }
+
+.btn--facebook {
+  background-color: blue; }
+
+.btn--twitter {
+  background-color: lightblue; }
+
 @media (max-width: 768px) {
   header {
     display: inline;
@@ -29,7 +38,7 @@ header {
   flex-direction: row;
   flex-flow: nowrap; }
 
-.nav_container {
+.nav_container, footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -48,23 +57,19 @@ header {
   flex-wrap: wrap;
   width: fit-content; }
 
-footer {
+footer #nav_bar {
+  --bs-nav-pills-link-active-color: white;
+  --bs-nav-pills-link-active-bg: black;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-bg-color: white;
+  --bs-nav-link-hover-color: black;
+  --bs-nav-pills-border-radius: 1px;
+  font-size: larger;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  footer #nav_bar {
-    --bs-nav-pills-link-active-color: white;
-    --bs-nav-pills-link-active-bg: black;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-bg-color: white;
-    --bs-nav-link-hover-color: black;
-    --bs-nav-pills-border-radius: 1px;
-    font-size: larger;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content; }
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content; }
 
 /*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
 #servicio {
@@ -90,6 +95,11 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap; }
+
+.popup_window {
+  border-style: solid;
+  border-width: 200px 200px;
+  border-color: red; }
 
 div.elem-group {
   margin: 20px 0; }

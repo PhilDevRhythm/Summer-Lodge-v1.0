@@ -16,6 +16,7 @@
 @media (max-width: 320px){
     form{
         font-size:x-small;
+        color: map-get($social_media, color);
     }
 }
     
