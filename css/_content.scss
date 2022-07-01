@@ -1,25 +1,34 @@
 /*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
 
-#servicio{
-    //width: 60%;
+#servicio {
+    width: 80%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    .card-body{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
 
-    .card.p-2{
-        width: fit-content;
-    }
-    }    
+    //.card-body{
+
+
+}
+
+#container_season_choose {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+   
+
 }
 
 
 /*INDEX CONTENT RELATED*/
 
-#nosotros0{
+#nosotros0 {
     width: 80%;
     display: flex;
     flex-direction: row;
