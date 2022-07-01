@@ -9,3 +9,10 @@ $social_media: (
         background-color: $color;
 }
 }
+
+@mixin border-custom($border-style,$border-width,$border-color){
+    border-style: $border-style;
+    border-width: $border-width;
+    border-color: $border-color;
+
+}
