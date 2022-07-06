@@ -1,0 +1,152 @@
+/*WHOLE DOC RELATED */
+.btn--send-mail {
+  background-color: red; }
+
+.btn--facebook {
+  background-color: blue; }
+
+.btn--twitter {
+  background-color: lightblue; }
+
+@media (max-width: 768px) {
+  header {
+    display: inline;
+    margin-bottom: 1em; }
+  #nosotros0 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center; } }
+
+@media (max-width: 320px) {
+  form {
+    font-size: x-small; } }
+
+#logo_container {
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+
+#root_background {
+  background-image: url(../img/background.jpg);
+  display: flex; }
+
+body {
+  background-size: cover; }
+
+/*HEADER ONLY LOGO*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap; }
+
+.nav_container, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#nav_bar {
+  --bs-nav-pills-border-radius: 1px;
+  --bs-nav-pills-link-active-color: white;
+  --bs-nav-pills-link-active-bg: black;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-bg-color: white;
+  --bs-nav-link-hover-color: black;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content; }
+
+footer #nav_bar {
+  --bs-nav-pills-link-active-color: white;
+  --bs-nav-pills-link-active-bg: black;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-bg-color: white;
+  --bs-nav-link-hover-color: black;
+  --bs-nav-pills-border-radius: 1px;
+  font-size: larger;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content; }
+
+/*LISTAS DE SERVICIOS en SITIO SERVICIOS - CONTENT*/
+#servicio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center; }
+
+#container_season_choose {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+
+/*INDEX CONTENT RELATED*/
+#nosotros0 {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center; }
+
+.popup_window {
+  border-style: solid;
+  border-width: 200px 200px;
+  border-color: red; }
+
+div.elem-group {
+  margin: 20px 0; }
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block; }
+
+label {
+  display: block;
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 10px;
+  font-size: 1.25em; }
+
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  padding: 10px; }
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block; }
+
+textarea {
+  height: 250px; }
+
+hr {
+  border: 1px dotted #ccc; }
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: CambCambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 4px;
+  cursor: pointer; }
+
+button:hover {
+  border: 2px solid black; }

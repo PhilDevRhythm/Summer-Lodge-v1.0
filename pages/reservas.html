@@ -2,58 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BootSTRAP EDITION</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="!Reserva ya las mejores noches de tus vacaciones con nosotros!">
+  <meta name="keywords" content="RESERVA, HOTEL, CAMA, POR NOCHE, ACTIVIDADES, BICICLETA, RUSTICO, ARAUCARIA, VERANO, LODGE, NIEVE, SKI, ALOJAMIENTO, VACACIONES, INVIERNO">
+  <title> Winter-Summer Lodge - Reservas tus noches</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
+  <br>
+  <div class="card container-xl" id="root_background">
+    <br>
     <header>
-        <div class="container-sm">
-            <img class="p-3" src="../img/logo.svg">
-        </div>
-        <ul class="nav nav-pills justify-content-center p-3 " id="nav_bar">
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
-        </ul>
+      <div class="container-sm" id="logo_container">
+        <img src="../img/new_logo3.png">
+      </div>
     </header>
+    <br>
+    <div class="nav_container">
+      <ul class="nav nav-pills card" id="nav_bar">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="reservas.html">Reservas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    </header>
+    <br>
     <section class="card container" id="servicio">
-        <div class="card-body">
-            <h1> Reservas</h1>
-            <p> Por favor elige fechas y noches para tu experiencia.
-            </p>
-            <div>
-                <img class="card-img-top" src="../img/summer.jpg" alt="Verano">
-            </div>
-        </div>
+      <div class="card-body">
+        <form action="reservation.php" method="post">
+          <div class="elem-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="visitor_name" placeholder="Tu nombre" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Correo Eléctronico</label>
+            <input type="email" id="email" name="visitor_email" placeholder="Tu e-mail" required>
+          </div>
+          <div class="elem-group">
+            <label for="phone">Telefono</label>
+            <input type="tel" id="phone" name="visitor_phone" placeholder="+56-1234-5678"
+              pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+          </div>
+          <hr>
+          <div class="elem-group inlined">
+            <label for="adult">Adultos</label>
+            <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="child">Niños</label>
+            <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="checkin-date">Dia de Ingreso</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+          </div>
+          <div class="elem-group inlined">
+            <label for="checkout-date">Dia de Salida</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+          </div>
+          <div class="elem-group">
+            <label for="room-selection">Elije una habitación</label>
+            <select id="room-selection" name="room_preference" required>
+              <option value="">Elije una habitación</option>
+              <option value="single">Single</option>
+              <option value="doble">Doble</option>
+              <option value="cabin4">Cabaña 4 personas</option>
+              <option value="cabin6">Cabaña 6 personas</option>
+              <option value="adjacent">Contigua</option>
+            </select>
+          </div>
+          <hr>
+          <div class="elem-group">
+            <label for="message">Algo mas?</label>
+            <textarea id="message" name="visitor_message" placeholder="Quizas tenemos lo que necesitas, preguntanos."
+              required></textarea>
+          </div>
+          <button type="submit">Reservar habitaciones</button>
+        </form>
+        <br>
+      </div>
     </section>
-    <footer>
-        <ul class="nav nav-pills justify-content-center p-3" id="nav_bar">
+    <br>
+  <footer>
+          <ul class="nav nav-pills card" id="nav_bar">
             <li class="nav-item">
-                <a class="nav-link" href="map.html">Mapa</a>
+              <a class="nav-link" href="map.html">Mapa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
+              <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
             </li>
-        </ul>
+          </ul>
     </footer>
+        <br>
+        <p class="text-center h9">Made by Phil</p>
+      
+
 </body>
 
 </html>

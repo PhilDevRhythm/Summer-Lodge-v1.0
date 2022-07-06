@@ -1,0 +1,22 @@
+
+@media (max-width: 768px){
+    header {
+        display: inline;
+        //flex-wrap: nowrap;
+        //justify-items: center;//
+        margin-bottom: 1em;
+        //justify-content: center;   //
+    }
+    #nosotros0{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-self: center;
+    }
+}
+@media (max-width: 320px){
+    form{
+        font-size:x-small;
+        color: map-get($social_media, color);
+    }
+}
+    
