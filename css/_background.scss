@@ -1,6 +1,5 @@
 #logo_container {
     align-items: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
 
@@ -12,7 +11,7 @@
 
 }
 
-body {
-    //background-image: url(../img/background.jpg);//
-    background-size: cover;
+#logo_pic{
+    display: flex;
+    flex-wrap: wrap;
 }

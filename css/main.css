@@ -8,22 +8,26 @@
 .btn--twitter {
   background-color: lightblue; }
 
-@media (max-width: 768px) {
-  header {
-    display: inline;
-    margin-bottom: 1em; }
-  #nosotros0 {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-self: center; } }
-
-@media (max-width: 320px) {
+@media screen and (max-width: 480px) {
+  #logo_container {
+    background-image: url(../img/new_logo_small.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-size: auto;
+    padding-bottom: 20px; }
   form {
     font-size: x-small; } }
 
+@media screen and (min-width: 481px) {
+  #logo_container {
+    background-image: url(../img/new_logo3.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center; } }
+
 #logo_container {
   align-items: center;
-  background-size: cover;
   display: flex;
   justify-content: center; }
 
@@ -31,8 +35,9 @@
   background-image: url(../img/background.jpg);
   display: flex; }
 
-body {
-  background-size: cover; }
+#logo_pic {
+  display: flex;
+  flex-wrap: wrap; }
 
 /*HEADER ONLY LOGO*/
 header {
@@ -84,12 +89,12 @@ footer #nav_bar {
   align-items: center;
   align-self: center; }
 
+/*CUADRO DE ELECCION DE TEMPORARADA*/
 #container_season_choose {
-  display: flex;
+  display: inline-block;
   width: fit-content;
-  flex-direction: column;
   align-items: center;
-  justify-items: center; }
+  justify-content: center; }
 
 /*INDEX CONTENT RELATED*/
 #nosotros0 {

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winter Summer Lodge - Contactanos</title>
     <meta name="description" content="Habla con nosotros, cuentanos tus deseos y que experiencia te gustaria tener">
-    <meta name="keywords" content="CONTACTO, HABLA CON LODGE, RENTAL, SNOWBOARD, TRANSPORTE, CENTRO SKI, RESERVA, HOTEL, CAMA, POR NOCHE, ACTIVIDADES, BICICLETA, RUSTICO, ARAUCARIA, VERANO, LODGE, NIEVE, SKI, ALOJAMIENTO, VACACIONES, INVIERNO">
+    <meta name="keywords"
+        content="CONTACTO, HABLA CON LODGE, RENTAL, SNOWBOARD, TRANSPORTE, CENTRO SKI, RESERVA, HOTEL, CAMA, POR NOCHE, ACTIVIDADES, BICICLETA, RUSTICO, ARAUCARIA, VERANO, LODGE, NIEVE, SKI, ALOJAMIENTO, VACACIONES, INVIERNO">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -19,7 +20,7 @@
         <br>
         <header>
             <div class="container-sm" id="logo_container">
-                <img src="../img/new_logo3.png">
+                <img class="pill" src="../img/empty_logo_transparent.png" id="logo_pic">
             </div>
         </header>
         <br>
@@ -41,37 +42,45 @@
                     <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                 </li>
             </ul>
-        </header>
-        <br>
-        <section class="card container" id="servicio">
-            <div class="card-body">
-                <h1> Escribenos o llamanos</h1>
-                <img src="../img/whatsapp_logo_animated.gif">
-                <p class="h1">+ 1 23 4567 8901</p>
+            </header>
+            <br>
+            <section class="card container" id="servicio">
+                <div class="card-body">
+                    <h1> Escribenos o llamanos</h1>
+                    <img src="../img/whatsapp_logo_animated.gif">
+                    <p class="h1">+ 1 23 4567 8901</p>
+                    <br>
+                    <form>
+                        <h4>Datos personales</h4>
+                        <br>
+                        <input type="text" placeholder="Nombre*" required><br>
+                        <br>
+                        <input type="email" placeholder="Direccion de correo*" required><br>
+                        <br>
+                        <input type="tel" placeholder="Numero de Telefono">
+                        <br>
+                        <br>
+                        <h4>¿Temporada de preferencia?</h4>
+                        <br>
+                        <div class="card p-2" id="container_season_choose">
+                            <label for="from-temporada-select">Verano</label>
+                            <input type="radio" name="from-temporada-select" value="verano" required>
+                            <label for="from-temporada-select">Invierno</label>
+                            <input type="radio" name="from-temporada-select" value="invierno">
+                        </div>
+                        <br>
+                        <br>
+                        <h4>Tu Mensaje</h4>
+                        <br>
+                        <textarea placeholder="Escribe tu consulta aqui"
+                            style="width:400px; height:300px;"></textarea><br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </div>
                 <br>
-                <form>
-                    <input type="text" placeholder="Nombre*" required><br>
-                    <br>
-                    <input type="email" placeholder="Direccion de correo*" required><br>
-                    <br>
-                    <input type="tel" placeholder="Numero de Telefono">
-                    <br>
-                    <br>
-                    <h4>¿Temporada de preferencia?</h4>
-                    <div class="card p-2" id="container_season_choose">
-                        <label for="from-temporada-select">Verano</label>
-                        <input type="radio" name="from-temporada-select" value="verano" required>
-                        <label for="from-temporada-select">Invierno</label>
-                        <input type="radio" name="from-temporada-select" value="invierno">
-                    </div>
-                    <br><br>
-                    <textarea placeholder="Escribe tu consulta aqui" style="width:400px; height:300px;"></textarea><br>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </form>
-            </div>
-        </section>
+            </section>
         </div>
         <br>
         <footer>
@@ -85,8 +94,9 @@
             </ul>
         </footer>
         <br>
-        <p class="text-center h9">Made by Phil</p>
     </div>
+    <br>
+    <p class="text-center h9">Made by Phil</p>
 </body>
 
 </html>
