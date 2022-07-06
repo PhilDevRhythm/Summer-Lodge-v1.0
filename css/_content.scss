@@ -11,12 +11,13 @@
     align-self: center;
 }
 
+/*CUADRO DE ELECCION DE TEMPORARADA*/
+
 #container_season_choose {
-    display: flex;
+    display: inline-block;
     width: fit-content;
-    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 
@@ -33,3 +34,5 @@
 .popup_window {
     @include border-custom(solid, 200px 200px, red)
 }
+
+

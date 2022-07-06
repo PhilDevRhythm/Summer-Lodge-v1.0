@@ -1,22 +1,28 @@
+@media screen and (max-width: 480px) {
 
-@media (max-width: 768px){
-    header {
-        display: inline;
-        //flex-wrap: nowrap;
-        //justify-items: center;//
-        margin-bottom: 1em;
-        //justify-content: center;   //
+    #logo_container {
+        background-image: url(../img/new_logo_small.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-x: center;
+        background-size: auto;
+        padding-bottom: 20px;
+
     }
-    #nosotros0{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-self: center;
-    }
-}
-@media (max-width: 320px){
-    form{
-        font-size:x-small;
+
+    form {
+        font-size: x-small;
         color: map-get($social_media, color);
     }
 }
-    
+
+@media screen and (min-width: 481px) {
+
+    #logo_container {
+
+        background-image: url(../img/new_logo3.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-x: center;
+    }
+}
