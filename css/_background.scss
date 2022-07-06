@@ -1,12 +1,18 @@
-#logo_container{
+#logo_container {
     align-items: center;
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
-    }
-#root_background{
+
+}
+
+#root_background {
     background-image: url(../img/background.jpg);
     display: flex;
-    
+
+}
+
+body {
+    //background-image: url(../img/background.jpg);//
+    background-size: cover;
 }

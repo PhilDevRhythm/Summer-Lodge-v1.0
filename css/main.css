@@ -25,12 +25,14 @@
   align-items: center;
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center; }
 
 #root_background {
   background-image: url(../img/background.jpg);
   display: flex; }
+
+body {
+  background-size: cover; }
 
 /*HEADER ONLY LOGO*/
 header {
@@ -94,7 +96,8 @@ footer #nav_bar {
   width: 80%;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  text-align: center; }
 
 .popup_window {
   border-style: solid;
