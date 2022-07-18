@@ -10,10 +10,11 @@ header {
 #logo_container_text {
     //width: 70%;
     align-items: center;
+    //align-content: center;
     display: flex;
     justify-content: center;
     color: azure;
-    text-align: center;
+    //text-align: center;
     //transform: translate(-50%, -50%);
         code:nth-child(1) {
         color: transparent;
@@ -86,6 +87,8 @@ header {
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
+    align-self: flex-start;
+
     background-clip: text;
     //text-fill-color: transparent;
     -webkit-background-clip: text;

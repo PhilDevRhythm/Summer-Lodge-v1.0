@@ -1,4 +1,4 @@
-@media screen and (max-width: 339px) {
+@media screen and (max-width: 359px) {
 
     #logo_container_text {
         //background-image: url(../img/text_only_logo.png);
@@ -8,7 +8,8 @@
        // background-size: auto;
        // padding-bottom: 20px;
        justify-self: last baseline;
-       padding-top: 50px;
+       margin-top: 50px;
+    
 
     }
 
@@ -17,6 +18,7 @@
         align-self: center;
         flex-direction: column;
         flex-wrap: nowrap;
+        text-align: center;
 
     }
 
@@ -32,13 +34,18 @@
     }
 }
 
-@media screen and (min-width: 340px) {
+@media screen and (min-width: 360px) {
 
-    #logo_container {
+    #logo_container_text {
 
         //background-image: url(../img/text_only_logo.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position-x: center;
+        margin-right: 20%;
+
+    }
+    header {
+        justify-items: center;
     }
 }

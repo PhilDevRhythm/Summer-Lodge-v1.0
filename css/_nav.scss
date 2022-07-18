@@ -6,30 +6,43 @@
 }
 
 #nav_bar {
-    --bs-nav-pills-border-radius: 1px;
-    --bs-nav-pills-link-active-color: white;
-    --bs-nav-pills-link-active-bg: black;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-bg-color: white;
-    --bs-nav-link-hover-color: black;
-    font-size: larger;
+    // --bs-nav-pills-border-radius: 1px;
+    // --bs-nav-pills-link-active-color: white;
+    // --bs-nav-pills-link-active-bg: rgb(21, 15, 73);
+    // --bs-nav-link-padding-y: 0.5rem;
+    // --bs-nav-link-color: rgb(21, 15, 73);
+    // --bs-nav-link-hover-bg-color: white;
+    // --bs-nav-link-hover-color: rgb(21, 15, 73);
+    // font-size: larger;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
+    // flex-wrap: wrap;
+    // width: fit-content;
+    li {
+        --bs-nav-pills-border-radius: 1px;
+        --bs-nav-pills-link-active-color: white;
+        --bs-nav-pills-link-active-bg: rgb(21, 15, 73);
+        --bs-nav-link-padding-y: 0.5rem;
+        --bs-nav-link-color: rgb(21, 15, 73);
+        --bs-nav-link-hover-bg-color: white;
+        --bs-nav-link-hover-color: rgb(21, 15, 73);
+        font-size: larger;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
 }
-
 footer {
     @extend .nav_container;
     
     #nav_bar {
         --bs-nav-pills-link-active-color: white;
-        --bs-nav-pills-link-active-bg: black;
+        --bs-nav-pills-link-active-bg: rgb(13, 5, 87);
         --bs-nav-link-padding-y: 0.5rem;
-        --bs-nav-link-color: black;
+        --bs-nav-link-color: rgb(13, 5, 87);
         --bs-nav-link-hover-bg-color: white;
-        --bs-nav-link-hover-color: black;
+        --bs-nav-link-hover-color: rgb(13, 5, 87);
         --bs-nav-pills-border-radius: 1px;
         font-size: larger;
         display: flex;
