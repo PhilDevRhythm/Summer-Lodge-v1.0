@@ -1,43 +1,42 @@
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 339px) {
 
-    #logo_container {
+    #logo_container_text {
         //background-image: url(../img/text_only_logo.png);
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-x: center;
-        background-size: auto;
-        padding-bottom: 20px;
+        //background-repeat: no-repeat;
+        //background-attachment: scroll;
+       // background-position-x: center;
+       // background-size: auto;
+       // padding-bottom: 20px;
+       justify-self: last baseline;
+       padding-top: 50px;
 
     }
 
     header {
         justify-items: center;
         align-self: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
 
-    }        
-    
-    #pre_snow {
-        align-self: center;
-        width: fit-content;
     }
-    
+
     #pre_sun {
         align-self: center;
-        width: fit-content;
-        margin-left: 200px;
+        //width: fit-content;
+        //margin-left: 200px;
     }
-    
+
     form {
         font-size: x-small;
         color: map-get($social_media, color);
     }
 }
 
-@media screen and (min-width: 492px) {
+@media screen and (min-width: 340px) {
 
     #logo_container {
 
-        background-image: url(../img/text_only_logo.png);
+        //background-image: url(../img/text_only_logo.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position-x: center;
