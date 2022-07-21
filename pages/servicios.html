@@ -10,11 +10,15 @@
         content="RENTAL, SNOWBOARD, TRANSPORTE, CENTRO SKI, RESERVA, HOTEL, CAMA, POR NOCHE, ACTIVIDADES, BICICLETA, RUSTICO, ARAUCARIA, VERANO, LODGE, NIEVE, SKI, ALOJAMIENTO, VACACIONES, INVIERNO">
     <title> Winter-Summer Lodge - ¿Que ofrecemos para tu estadia?</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <br>
     <div class="card container-xl" id="root_background">
         <div class="snow"></div>
@@ -79,73 +83,90 @@
 
         </header>
         <br>
-        <div class="nav_container">
-            <ul class="nav nav-pills card" id="nav_bar">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="reservas.html">Reservas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            </header>
+        <nav class="navbar navbar-expand-lg" id="">
+            <div class="container-fluid" id="nav_container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="boton_menu">
+                    <span id="icono_boton">
+                        <i class="fa fa-bars" style="font-size:28px;color:rgb(255, 255, 255)"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill" id="nav_bar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="que-hacer.html">¿Que hacer?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <br>
+        <main>
+            <section class="card container" id="servicio">
+                <div class="card-body">
+                    <h1> Hoteleria & Cabañas</h1>
+                    <h2>De 4 a 6 personas</h2>
+                    <p> Nuestras habitaciones y cabañas dejan satisfecho los 5 sentidos, con vistas unicas,
+                        naturaleza
+                        autoctona tocando tu puerta.
+                    </p>
+                    <img class="card-img-top" src="../img/cabin.jpg" alt="Verano">
+                </div>
+            </section>
             <br>
-            <main>
-                <section class="card container" id="servicio">
-                    <div class="card-body">
-                        <h1> Hoteleria & Cabañas</h1>
-                        <h2>De 4 a 6 personas</h2>
-                        <p> Nuestras habitaciones y cabañas dejan satisfecho los 5 sentidos, con vistas unicas,
-                            naturaleza
-                            autoctona tocando tu puerta.
-                        </p>
-                        <img class="card-img-top" src="../img/cabin.jpg" alt="Verano">
-                    </div>
-                </section>
-                <br>
-                <section class="card container" id="servicio">
-                    <div class="card-body">
-                        <h1> Transporte a centro de SKI</h1>
-                        <h2> en nuestro vehiculo para nieve</h2>
-                        <p> Contamos con transporte reservable y programado para ir al Cnetro de SKI Corralco y otras
-                            actividades, contamos con capacidad para 10 pasajeros.
-                            Okina renounced it all, and rose to a higher plane.
-                        </p>
-                        <img class="card-img-top" src="../img/snowtransport.jpg" alt="Verano">
-                    </div>
-                </section>
-                <br>
-                <section class="card container" id="servicio">
-                    <div class="card-body">
-                        <h1> Snow Sports Rental</h1>
-                        <h2> Snowbaord, SKI, trineos y mas..</h2>
-                        <p> Contamos con nuestro propio servicio de renta de implementos deportivos de Invierno y se le
-                            suman
-                            bicicletas, mountainboards y otros divertidos accesorios</p>
-                        <img class="card-img-top" src="../img/rental.jpg" alt="Verano">
-                    </div>
-                </section>
-            </main>
+            <section class="card container" id="servicio">
+                <div class="card-body">
+                    <h1> Transporte a centro de SKI</h1>
+                    <h2> en nuestro vehiculo para nieve</h2>
+                    <p> Contamos con transporte reservable y programado para ir al Cnetro de SKI Corralco y otras
+                        actividades, contamos con capacidad para 10 pasajeros.
+                        Okina renounced it all, and rose to a higher plane.
+                    </p>
+                    <img class="card-img-top" src="../img/snowtransport.jpg" alt="Verano">
+                </div>
+            </section>
             <br>
-        </div>
+            <section class="card container" id="servicio">
+                <div class="card-body">
+                    <h1> Snow Sports Rental</h1>
+                    <h2> Snowbaord, SKI, trineos y mas..</h2>
+                    <p> Contamos con nuestro propio servicio de renta de implementos deportivos de Invierno y se le
+                        suman
+                        bicicletas, mountainboards y otros divertidos accesorios</p>
+                    <img class="card-img-top" src="../img/rental.jpg" alt="Verano">
+                </div>
+            </section>
+        </main>
+        <br>
         <footer>
-            <ul class="nav nav-pills card" id="nav_bar">
-                <li class="nav-item">
-                    <a class="nav-link" href="map.html">Mapa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid" id="nav_container">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill" id="nav_bar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">Mapa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="legales.html">Legales & Inversionistas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </footer>
         <br>
     </div>

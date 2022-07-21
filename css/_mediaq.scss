@@ -1,15 +1,9 @@
 @media screen and (max-width: 359px) {
 
     #logo_container_text {
-        //background-image: url(../img/text_only_logo.png);
-        //background-repeat: no-repeat;
-        //background-attachment: scroll;
-       // background-position-x: center;
-       // background-size: auto;
-       // padding-bottom: 20px;
-       justify-self: last baseline;
-       margin-top: 50px;
-    
+        justify-self: last baseline;
+        margin-top: 50px;
+
 
     }
 
@@ -24,8 +18,7 @@
 
     #pre_sun {
         align-self: center;
-        //width: fit-content;
-        //margin-left: 200px;
+
     }
 
     form {
@@ -38,13 +31,13 @@
 
     #logo_container_text {
 
-        //background-image: url(../img/text_only_logo.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-position-x: center;
         margin-right: 20%;
 
     }
+
     header {
         justify-items: center;
     }
