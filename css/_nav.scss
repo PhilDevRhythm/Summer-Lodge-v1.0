@@ -1,41 +1,69 @@
-.nav_container {
+#nav_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-items: center;
+
+}
+
+#boton_menu {
+    align-self: center;
+    justify-self: center;
+    border-color: white;
+}
+
+#icono_boton {
+    border-color: white;
+}
+
+#icon_lines {
+    color: white;
 }
 
 #nav_bar {
-    --bs-nav-pills-border-radius: 1px;
-    --bs-nav-pills-link-active-color: white;
-    --bs-nav-pills-link-active-bg: black;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-color: black;
-    --bs-nav-link-hover-bg-color: white;
-    --bs-nav-link-hover-color: black;
-    font-size: larger;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
-}
 
-footer {
-    @extend .nav_container;
-    
-    #nav_bar {
-        --bs-nav-pills-link-active-color: white;
-        --bs-nav-pills-link-active-bg: black;
+    // --bs-nav-pills-border-radius: 1px;
+    // --bs-nav-pills-link-active-color: white;
+    // --bs-nav-pills-link-active-bg: rgb(21, 15, 73);
+    // --bs-nav-link-padding-y: 0.5rem;
+    // --bs-nav-link-color: rgb(21, 15, 73);
+    // --bs-nav-link-hover-bg-color: white;
+    // --bs-nav-link-hover-color: rgb(21, 15, 73);
+    // font-size: larger;
+    display: flex;
+
+
+    //flex-direction: row;
+    // flex-wrap: wrap;
+    // width: fit-content;
+    li {
         --bs-nav-link-padding-y: 0.5rem;
-        --bs-nav-link-color: black;
-        --bs-nav-link-hover-bg-color: white;
-        --bs-nav-link-hover-color: black;
-        --bs-nav-pills-border-radius: 1px;
-        font-size: larger;
+        --bs-nav-link-color: rgb(255, 255, 255);
+        --bs-nav-link-hover-bg-color: rgb(13, 5, 87, 0.021);
+        //--bs-nav-link-hover-color: rgb(154, 221, 134);
+        font-size: x-large;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: fit-content;
+        //background:rgba(13, 5, 87, 0.021)
+    }
+}
+
+footer {
+    @extend #nav_container;
+
+    li {
+        --bs-nav-link-padding-y: 0.5rem;
+        --bs-nav-link-color: rgb(255, 255, 255);
+        --bs-nav-link-hover-bg-color: rgb(13, 5, 87, 0.021);
+        //--bs-nav-link-hover-color: rgb(154, 221, 134);
+        font-size: x-large;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: fit-content;
+        //background:rgba(13, 5, 87, 0.021)
     }
 
 }
