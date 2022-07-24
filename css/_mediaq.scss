@@ -22,8 +22,22 @@
     }
 
     form {
-        font-size: x-small;
+        font-size: xx-small;
         color: map-get($social_media, color);
+    }
+
+    #contacto_text {
+        width: 200px;
+        height: 300px;
+    }
+
+    .form-control-sm {
+        width: 10%;
+    }
+
+    #logo_whatsapp {
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -40,5 +54,10 @@
 
     header {
         justify-items: center;
+    }
+
+    #contacto_text {
+        width: 250px;
+        height: 300px;
     }
 }

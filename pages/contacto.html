@@ -119,40 +119,41 @@
         <section class="card container" id="servicio">
             <div class="card-body">
                 <h1> Escribenos o llamanos</h1>
-                <img src="../img/whatsapp_logo_animated.gif">
+                <img src="../img/whatsapp_logo_animated.gif" id="logo_whatsapp">
                 <p class="h1">+ 1 23 4567 8901</p>
                 <br>
                 <form>
                     <h4>Datos personales</h4>
                     <br>
-                    <input class="form-control-lg" type="text" placeholder="Nombre*" required><br>
+                    <input class="form-control-sm" type="text" placeholder="Nombre*" required><br>
                     <br>
-                    <input class="form-control-lg"type="email" placeholder="Direccion de correo*" required><br>
+                    <input class="form-control-sm" type="email" placeholder="Direccion de correo*" required><br>
                     <br>
-                    <input class="form-control-lg"type="tel" placeholder="Numero de Telefono">
+                    <input class="form-control-sm" type="tel" placeholder="Numero de Telefono">
                     <br>
                     <br>
-                    <h4>¿Temporada de preferencia?</h4>
+                    <h4>¿Temporada?</h4>
                     <br>
                     <div class="card p-2" id="container_season_choose">
                         <label for="from-temporada-select">Verano</label>
-                        <input class="form-control-lg"type="radio" name="from-temporada-select" value="verano" required>
+                        <input class="form-control-sm" type="radio" name="from-temporada-select" value="verano"
+                            required>
                         <label for="from-temporada-select">Invierno</label>
-                        <input class="form-control-lg"type="radio" name="from-temporada-select" value="invierno">
+                        <input class="form-control-sm" type="radio" name="from-temporada-select" value="invierno">
                     </div>
                     <br>
                     <br>
                     <h4>Tu Mensaje</h4>
                     <br>
-                    <textarea placeholder="Escribe tu consulta aqui" style="width:400px; height:300px;"></textarea><br>
+                    <textarea id="contacto_text" placeholder="Escribe tu consulta aqui"></textarea><br>
                     <br>
-                    <input class="form-control-lg"type="submit" value="Enviar">
-                    <input class="form-control-lg"type="reset" value="Borrar">
+                    <input class="form-control-sm" type="submit" value="Enviar">
+                    <input class="form-control-sm" type="reset" value="Borrar">
                 </form>
             </div>
             <br>
         </section>
-        
+
         <footer>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid" id="nav_container">
