@@ -48,6 +48,18 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         width: fit-content;
+        
     }
+}
 
+.nav-item{
+    
+    a{
+        align-self: center;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
 }
